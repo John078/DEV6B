@@ -11,25 +11,25 @@ class controller:
         if request.method == 'GET':
             return render_template('easy.html')
         elif request.method == 'POST':
-            givenAnswersG1 = model.GerundEasy()
+            givenAnswersG1 = model.Inputuser()
             rightAnswersG1 = model.Easyanswers()
-            score = model.GerundEasyResult()
+            score = model.Result()
             return render_template("easyresult.html", givenAnswersG1=givenAnswersG1, rightAnswersG1=rightAnswersG1, score=score)
 
     def Ex_medium():
         if request.method == 'GET':
             return render_template('medium.html')
         elif request.method == 'POST':
-            givenAnswersG1 = model.GerundMedium()
+            givenAnswersG1 = model.Inputuser()
             rightAnswersG1 = model.Mediumanswers()
-            score = model.GerundMediumResult()
+            score = model.Result()
             return render_template("mediumresult.html", givenAnswersG1=givenAnswersG1, rightAnswersG1=rightAnswersG1, score=score)
 
     def Ex_hard():
         if request.method == 'GET':
             return render_template('hard.html')
         elif request.method == 'POST':
-            givenAnswersG1 = model.GerundHard()
+            givenAnswersG1 = model.Inputuser()
             rightAnswersG1 = model.Hardanswers()
-            score = model.GerundHardResult()
+            score = model.Result()
             return render_template("hardresult.html", givenAnswersG1=givenAnswersG1, rightAnswersG1=rightAnswersG1, score=score)
