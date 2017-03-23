@@ -3,29 +3,50 @@
 {% block content %}
 
 <body>
-    <h2>Hier Komen de antwoorden..</h2>
     <table>
         <tr>
-            <td>
-                <p>
-                    Ingevulde antwoorden:
-                    {% for word in givenAnswersG1 %}
-                    <ul>
-                        <li>{{ word }}</li>
-                    </ul>
-                    {% endfor %}
-                </p>
-            </td>
-            <td>
-                <p>
-                    Correcte antwoorden:
-                    {% for word in rightAnswersG1 %}
-                    <ul>
-                        <li>{{ word }}</li>
-                    </ul>
-                    {% endfor %}
-                </p>
-            </td>
+            <th>Jouw Resultaten</th>
+            <th>Antwoorden</th>
+        </tr>
+        <tr>
+            <td><p>James offered (to help / helping)<input class="w3-input w3-border" type="text" name="answer1" placeholder="{{ givenAnswersG1[0] }}" />us move.</p></td>
+            <td><p>{{ rightAnswersG1[0] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>What do you want (to do / doing)<input class="w3-input w3-border" type="text" name="answer2" placeholder="{{ givenAnswersG1[1] }}" />tonight?</p></td>
+            <td><p>{{ rightAnswersG1[1] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>Her daughter decided (to become / becoming)<input class="w3-input w3-border" type="text" name="answer3" placeholder="{{ givenAnswersG1[2] }}" />a veterinarian.</p></td>
+            <td><p>{{ rightAnswersG1[2] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I have decided on (to become / becoming)<input class="w3-input w3-border" type="text" name="answer4" placeholder="{{ givenAnswersG1[3] }}" />a veterinarian.</p></td>
+            <td><p>{{ rightAnswersG1[3] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I hope (to travel / traveling)<input class="w3-input w3-border" type="text" name="answer5" placeholder="{{ givenAnswersG1[4] }}" />to Greece this summer.</p></td>
+            <td><p>{{ rightAnswersG1[4] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>The man from Brazil appears (to be / being)<input class="w3-input w3-border" type="text" name="answer6" placeholder="{{ givenAnswersG1[5] }}" />. the best dancer in the group.</p></td>
+            <td><p>{{ rightAnswersG1[5] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I learned (to speak / speaking)<input class="w3-input w3-border" type="text" name="answer7" placeholder="{{ givenAnswersG1[6] }}" />French while I was living in Switzerland.</p></td>
+            <td><p>{{ rightAnswersG1[6] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I remember (to see / seeing)<input class="w3-input w3-border" type="text" name="answer8" placeholder="{{ givenAnswersG1[7] }}" />her at the beach last week.</p></td>
+            <td><p>{{ rightAnswersG1[7] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>Don't forget (to call / calling)<input class="w3-input w3-border" type="text" name="answer9" placeholder="{{ givenAnswersG1[8] }}" />your mother!</p></td>
+            <td><p>{{ rightAnswersG1[8] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>She promised (to go / going)<input class="w3-input w3-border" type="text" name="answer10" placeholder="{{ givenAnswersG1[9] }}" />to the theater with me.</p></td>
+            <td><p>{{ rightAnswersG1[9] }}</p></td>
         </tr>
     </table>
     <p>Jouw score: {{ score }}%</p>

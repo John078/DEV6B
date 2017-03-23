@@ -3,29 +3,50 @@
 {% block content %}
 
 <body>
-    <h2>Hier Komen de antwoorden..</h2>
     <table>
         <tr>
-            <td>
-                <p>
-                    Ingevulde antwoorden:
-                    {% for word in givenAnswersG1 %}
-                    <ul>
-                        <li>{{ word }}</li>
-                    </ul>
-                    {% endfor %}
-                </p>
-            </td>
-            <td>
-                <p>
-                    Correcte antwoorden:
-                    {% for word in rightAnswersG1 %}
-                    <ul>
-                        <li>{{ word }}</li>
-                    </ul>
-                    {% endfor %}
-                </p>
-            </td>
+            <th>Jouw Resultaten</th>
+            <th>Antwoorden</th>
+        </tr>
+        <tr>
+            <td><p>When I mentioned (to get / getting)<input class="w3-input w3-border" type="text" name="answer1" placeholder="{{ givenAnswersG1[0] }}" />married, she didn't say anything.</p></td>
+            <td><p>{{ rightAnswersG1[0] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>If he keeps (to steal / stealing)<input class="w3-input w3-border" type="text" name="answer2" placeholder="{{ givenAnswersG1[1] }}" />things from work, he's going to get fired.</p></td>
+            <td><p>{{ rightAnswersG1[1] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>Bill enjoys (to read / reading)<input class="w3-input w3-border" type="text" name="answer3" placeholder="{{ givenAnswersG1[2] }}" />mystery novels.</p></td>
+            <td><p>{{ rightAnswersG1[2] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I plan (to go / going)<input class="w3-input w3-border" type="text" name="answer4" placeholder="{{ givenAnswersG1[3] }}" />to college in the fall. </p></td>
+            <td><p>{{ rightAnswersG1[3] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I suggested (to go / going)<input class="w3-input w3-border" type="text" name="answer5" placeholder="{{ givenAnswersG1[4] }}" />to a restaurant after the movie.</p></td>
+            <td><p>{{ rightAnswersG1[4] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>The doctor wants (to speak / speaking)<input class="w3-input w3-border" type="text" name="answer6" placeholder="{{ givenAnswersG1[5] }}" />with you.</p></td>
+            <td><p>{{ rightAnswersG1[5] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I really miss (to work / working)<input class="w3-input w3-border" type="text" name="answer7" placeholder="{{ givenAnswersG1[6] }}" />as a flight attendant.</p></td>
+            <td><p>{{ rightAnswersG1[6] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>The little boy's teacher asked (to talk / talking)<input class="w3-input w3-border" type="text" name="answer8" placeholder="{{ givenAnswersG1[7] }}" />with his mother.</p></td>
+            <td><p>{{ rightAnswersG1[7] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I plan on  (to go / going)<input class="w3-input w3-border" type="text" name="answer9" placeholder="{{ givenAnswersG1[8] }}" />to college in the fall.</p></td>
+            <td><p>{{ rightAnswersG1[8] }}</p></td>
+        </tr>
+        <tr>
+            <td><p>I don't mind (to play / playing)<input class="w3-input w3-border" type="text" name="answer10" placeholder="{{ givenAnswersG1[9] }}" />with your cat. I love cats.</p></td>
+            <td><p>{{ rightAnswersG1[9] }}</p></td>
         </tr>
     </table>
     <p>Jouw score: {{ score }}%</p>
