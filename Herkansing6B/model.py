@@ -42,3 +42,14 @@ class Model:
 			if self.givenAnswersG1[i] == self.rightAnswersG1[i]:
 				score += 10
 		return score
+
+	def InputuserTest(self, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10):
+		self.givenAnswersG1 = [answer1.lower(), answer2.lower(), answer3.lower(), answer4.lower(), answer5.lower(), answer6.lower(), answer7.lower(), answer8.lower(), answer9.lower(), answer10.lower()]   
+		return self.givenAnswersG1
+
+	def ResultTest(self, givenAnswers, rightAnswers):
+		score = 0
+		for i in range(0, 10):
+			if givenAnswers[i] == rightAnswers[i]:
+				score += 10
+		return score
