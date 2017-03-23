@@ -20,16 +20,16 @@ class controller:
         if request.method == 'GET':
             return render_template('medium.html')
         elif request.method == 'POST':
-            givenAnswersG1 = model.GerundInfinitive1()
-            rightAnswersG1 = model.rightAnswers()
-            score = model.GerundInfinitive1Result()
-            return render_template("Result1.html", givenAnswersG1=givenAnswersG1, rightAnswersG1=rightAnswersG1, score=score)
+            givenAnswersG1 = model.GerundMedium()
+            rightAnswersG1 = model.Mediumanswers()
+            score = model.GerundMediumResult()
+            return render_template("mediumresult.html", givenAnswersG1=givenAnswersG1, rightAnswersG1=rightAnswersG1, score=score)
 
     def Ex_hard():
         if request.method == 'GET':
             return render_template('hard.html')
         elif request.method == 'POST':
-            givenAnswersG1 = model.GerundInfinitive1()
-            rightAnswersG1 = model.rightAnswers()
-            score = model.GerundInfinitive1Result()
-            return render_template("Result1.html", givenAnswersG1=givenAnswersG1, rightAnswersG1=rightAnswersG1, score=score)
+            givenAnswersG1 = model.GerundHard()
+            rightAnswersG1 = model.Hardanswers()
+            score = model.GerundHardResult()
+            return render_template("hardresult.html", givenAnswersG1=givenAnswersG1, rightAnswersG1=rightAnswersG1, score=score)

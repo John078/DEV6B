@@ -1,0 +1,34 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<body>
+    <h2>Hier Komen de antwoorden..</h2>
+    <table>
+        <tr>
+            <td>
+                <p>
+                    Ingevulde antwoorden:
+                    {% for word in givenAnswersG1 %}
+                    <ul>
+                        <li>{{ word }}</li>
+                    </ul>
+                    {% endfor %}
+                </p>
+            </td>
+            <td>
+                <p>
+                    Correcte antwoorden:
+                    {% for word in rightAnswersG1 %}
+                    <ul>
+                        <li>{{ word }}</li>
+                    </ul>
+                    {% endfor %}
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p>Jouw score: {{ score }}%</p>
+</body>
+
+{% endblock %}

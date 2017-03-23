@@ -56,7 +56,9 @@
     <Content Include="Herkansing6B\templates\easy.html" />
     <Content Include="Herkansing6B\templates\easyresult.html" />
     <Content Include="Herkansing6B\templates\hard.html" />
+    <Content Include="Herkansing6B\templates\hardresult.html" />
     <Content Include="Herkansing6B\templates\medium.html" />
+    <Content Include="Herkansing6B\templates\mediumresult.html" />
     <Content Include="requirements.txt" />
     <Content Include="Herkansing6B\static\content\bootstrap.css" />
     <Content Include="Herkansing6B\static\content\bootstrap.min.css" />
