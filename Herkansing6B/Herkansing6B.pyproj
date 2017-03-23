@@ -30,6 +30,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="controller.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbconnect.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="model.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="Herkansing6B\__init__.py" />
     <Compile Include="Herkansing6B\views.py" />
@@ -43,6 +52,11 @@
     <Folder Include="Herkansing6B\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Herkansing6B\templates\Assignment1.html" />
+    <Content Include="Herkansing6B\templates\easy.html" />
+    <Content Include="Herkansing6B\templates\easyresult.html" />
+    <Content Include="Herkansing6B\templates\hard.html" />
+    <Content Include="Herkansing6B\templates\medium.html" />
     <Content Include="requirements.txt" />
     <Content Include="Herkansing6B\static\content\bootstrap.css" />
     <Content Include="Herkansing6B\static\content\bootstrap.min.css" />
@@ -66,7 +80,6 @@
     <Content Include="Herkansing6B\static\scripts\respond.js" />
     <Content Include="Herkansing6B\static\scripts\respond.min.js" />
     <Content Include="Herkansing6B\static\scripts\_references.js" />
-    <Content Include="Herkansing6B\templates\about.html" />
     <Content Include="Herkansing6B\templates\contact.html" />
     <Content Include="Herkansing6B\templates\index.html" />
     <Content Include="Herkansing6B\templates\layout.html" />
