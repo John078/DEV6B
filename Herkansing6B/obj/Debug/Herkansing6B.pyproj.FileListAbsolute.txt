@@ -9,7 +9,5 @@ c:\users\john\documents\visual studio 2015\Projects\Herkansing6B\Herkansing6B\bi
 c:\users\john\documents\visual studio 2015\Projects\Herkansing6B\Herkansing6B\bin\Microsoft.PythonTools.AzureSetup.exe
 c:\users\john\documents\visual studio 2015\Projects\Herkansing6B\Herkansing6B\bin\Microsoft.PythonTools.AzureSetup.exe.config
 c:\users\john\documents\visual studio 2015\Projects\Herkansing6B\Herkansing6B\bin\wfastcgi.py
-c:\users\john\documents\visual studio 2015\Projects\Herkansing6B\Herkansing6B\obj\Debug\deployment-updated-pyvenv.cfg
-c:\users\john\documents\visual studio 2015\Projects\Herkansing6B\Herkansing6B\ptvs_virtualenv_proxy.py
 c:\users\john\documents\visual studio 2015\Projects\Herkansing6B\Herkansing6B\obj\Debug\web.config
 c:\users\john\documents\visual studio 2015\Projects\Herkansing6B\Herkansing6B\obj\Debug\web.debug.config
